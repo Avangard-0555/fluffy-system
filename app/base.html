@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Learn</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">  <!-- Подключение CSS-стилей -->
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a>  <!-- Ссылка на главную страницу -->
+        <a href="{{ url_for('login') }}">Login</a>  <!-- Ссылка на страницу входа -->
+        <a href="{{ url_for('register') }}">Register</a>  <!-- Ссылка на страницу регистрации -->
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>  <!-- Ссылка на панель управления -->
+    </nav>
+    {% block content %}{% endblock %}  <!-- Место для контента каждой страницы -->
+</body>
+</html>
+
+
+
